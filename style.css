@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.icon{
+    max-width: 25px;
+    max-height: 25px;
+    padding: 0px 10px;
+}
+.timeStamp{
+display: flex;
+align-items: center;
+}
+body{
+    background-color: rgba(7, 192, 75, 0.896);
+    background-image: url('/media/pexels-artem-saranin-1853542.jpg');
+    background-size: cover;
+}
+nav{
+    background-color: rgba(0, 0, 0, 0.801);
+    color: white;
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.li{
+    font-weight: bold;
+    margin: 0 1rem;
+}
+a{
+    text-decoration: none;
+}
+.c-white{
+    color: rgb(160, 191, 220);
+}
+.logo{
+    width: 45px;
+    margin: 5px 15px;
+    padding: 5px;
+    border-radius: 35%;
+    border: 1px solid rgb(42, 3, 3);
+}
+#logo{
+    display: flex;
+    align-items: center;
+}
+.title{
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    display: flex;
+    width: 1280px;
+    max-width: 96vw;
+    max-height: 80vh;
+    margin: auto;
+    /* justify-content: space-around; */
+    margin-top: 1vh;
+    background-color: rgba(0, 149, 255, 0.516);
+    background-image: url('/media/bg.jpg');
+    background-size: cover;
+    color: whitesmoke;
+    border: 5px solid rgba(0, 0, 0, 0.721);
+    border-radius: 20px;
+    padding: 10px;
+    /* flex-wrap: wrap; */
+}
+.bottom{
+    margin-top: 2vh;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+    height: 105px;
+    background-color:rgba(28, 255, 122, 0.507);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.gif img{
+    height: 40px;
+    margin-top: 10px;
+    display: none;
+    transition: 1.2s;
+}
+.seek{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: larger;
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* .m_10{
+    margin-top: -20px; */
+/* } */
+.playSeek{
+    /* margin-top: -20px; */
+    width: 50%;
+    cursor:pointer;
+}
+
+.album{
+    position: sticky;
+    top: -20px;
+    z-index: 10;
+    background-color: rgba(20, 8, 62, 0.918);
+    padding:10px 10px ;
+    margin:0 0 -15px -10px ;
+}
+.nextPreAction{
+    /* margin-top: -5px; */
+    /* margin-bottom: 15px; */
+    display: flex;
+    justify-content: center;
+}
+.iconnp{
+    width: 35px;
+    margin-top: 5px;
+}
+.gif{
+    position: absolute;
+    left: 10vw;
+}
+.playlist{
+    padding: 10px;
+    width: 50%;
+    /* min-width: 500px; */
+    /* max-width: max-content; */
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+.lists{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding:5px 10px;
+border-radius: 20px;
+background-color: rgba(47, 173, 70, 0.487);
+margin-top: 10px;
+cursor: pointer;
+border: 1px solid transparent;
+}
+.lists:hover{
+    background-color: rgba(37, 69, 46, 0.806);
+    border: 1px solid greenyellow;
+}
+.lists img{
+width: 50px;
+height: 50px;
+border-radius: 50%;
+}
+.action{
+    display: flex;
+    max-width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1vw;
+}
+.act{
+    width: 500px;
+    max-width: 80%;
+    margin-top: 5vw;
+    border: 5px solid rgba(61, 243, 67, 0.316);
+    border-radius: 15px;
+}
+
+.playlist::-webkit-scrollbar {
+    width: 0.4rem;               /* width of the entire scrollbar */
+  }
+  
+  .playlist::-webkit-scrollbar-track {
+    background: rgba(200, 255, 0, 0.299);        /* color of the tracking area */
+  }
+  
+  .playlist::-webkit-scrollbar-thumb {
+    background-color: rgba(1, 232, 124, 0.935);    /* color of the scroll thumb */
+    border-radius: 50px;       /* roundness of the scroll thumb */
+    border: 3px solid rgba(7, 9, 0, 0.396);  /* creates padding around scroll thumb */
+  }
+.playSeek{
+    margin-bottom: 9px;
+}
+i{
+    color: rgb(10, 0, 67);
+}
+i{
+    padding: 0 6px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Your existing styles here */
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    body {
+        background-size: cover;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 2vh;
+        max-height: none;
+    }
+.playlist{
+    min-width: 96%;
+}
+    .bottom {
+        height: 100px;
+        width: 100%;
+    }
+
+    .gif {
+        left: 5vw; /* Adjust the position of the .gif on smaller screens */
+    }
+
+    .action {
+       display: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        background-size: cover;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 2vh;
+        max-height: none;
+    }
+
+    .bottom {
+        height: 80px;
+    }
+
+    .gif {
+        left: 2vw; /* Adjust the position of the .gif on even smaller screens */
+    }
+
+    .act {
+        width: 90%; /* Adjust the width of the .act on even smaller screens */
+    }
+}
+
