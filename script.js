@@ -2,7 +2,7 @@
 let songs;
 // Fetch the JSON data from the file
 // fetch('naats.json')
-fetch('http://localhost:8000/items')
+fetch('https://islamicalfaaz.onrender.com/items')
 .then(response => response.json())
     .then(data => {
         // Convert the JSON data into the array structure
