@@ -9,7 +9,7 @@ fetch('http://localhost:8000/items')
             songs = data.map(song => ({
             songName: song.itemName,
             filePath: song.itemLink,
-            coverPath: 'covers/1.jpg',
+            coverPath: '1.jpg',
             songDescription: song.itemDescription
         }));
 
