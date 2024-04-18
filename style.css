@@ -13,7 +13,7 @@ align-items: center;
 }
 body{
     background-color: rgba(7, 192, 75, 0.896);
-    background-image: url('/media/pexels-artem-saranin-1853542.jpg');
+    background-image: url('media/pexels-artem-saranin-1853542.jpg');
     background-size: cover;
 }
 nav{
