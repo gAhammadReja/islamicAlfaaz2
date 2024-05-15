@@ -140,13 +140,13 @@ align-items: center;
 justify-content: space-between;
 padding:5px 10px;
 border-radius: 20px;
-background-color: rgba(47, 173, 70, 0.487);
+background-color: rgba(47, 173, 70, 0.687);
 margin-top: 10px;
 cursor: pointer;
 border: 1px solid transparent;
 }
 .lists:hover{
-    background-color: rgba(37, 69, 46, 0.806);
+    background-color: rgba(37, 69, 46, 0.86);
     border: 1px solid greenyellow;
 }
 .lists img{
